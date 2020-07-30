@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    /* Meldung: "Invalid separator in shape definition. It must be a comma." - code für Visually Hidden von Unterricht übernommen */ 
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+form {
+    border-radius: 5px;
+    margin: 0; 
+}
+
+h1 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  
+}
+
+.wrapper img {
+    transform: translateY(19%);
+}
+
+.formular {
+    flex-basis: 50%;
+}
+
+/* ------------------- NAVIGATION -------------------  */
+
+
+.menu_icon {
+    display: none; 
+}
+
+.wrapper_navigation {
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 1px 5px 0px rgb(206, 206, 206);
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.wrapper_menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.REACH_logo svg {
+    width: 80px;
+    transform: translateY(40%);  
+}
+
+.wrapper_nav {
+    width: 320px;
+}
+
+#current {
+    color: #EB8F5D;
+}
+
+.menu_points {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+    transform: translateY(45%);  
+}
+
+.menu_points a {
+    font-family: 'Red Hat Text', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ------------------- FOOTER -------------------  */
+
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 25px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+.wrapper_social_media_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-bottom: 25px;
+}
+
+.wrapper_footer_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper_footer a {
+    border-right: none;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+.wrapper_footer a:last-child {
+    margin-right: 0;
+}
+
+.wrapper_footer_all {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------- FORM VALIDATION CSS ERROR MESSAGES -------------------  */
+
+label {
+    font-family: 'Red Hat Text', sans-serif;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+  
+}
+
+.chooseShippingService {
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 15px;
+}
+
+.radio_businessadress {
+    margin-bottom: 30px;
+}
+
+button {
+    width: 40%;
+    border: 1px solid #EB8F5D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #EB8F5D;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 1px solid #EB8F5D;
+    background-color: white;
+    color: #EB8F5D;
+}
+
+.checkbox_books {
+    margin-bottom: 30px;
+}
+
+
+/* ------------------- FORM VALIDATION CSS ERROR MESSAGES -------------------  */
+
+.j-error_full_name {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_full_name_input {
+    border: red 1px solid;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_address {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_address_input {
+    border: red 1px solid;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_email {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_email_input {
+    border: red 1px solid;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_tel {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_radio {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+.j-error_tel_input {
+    border: red 1px solid;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+.j-error_checked {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.j-error_service_privacy_policy {
+    color: red;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------- SUCCESSFULLY SENT -------------------  */
+
+.sent_thank_you {
+    color: #EB8F5D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.sent {
+    color: #EB8F5D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 50px; 
+    margin-bottom: 400px;  
+    padding-right: 50px; 
+}
+
+.wrapper_sent {
+    display: flex;
+}
+
+/* ------------------- @MEDIA -------------------  */
+
+@media (max-width: 1150px) {
+    .wrapper img {
+        display: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+    width: 100%;
+    }
+
+    .formular {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu_icon {
+        display: inline; 
+    }
+
+    .menu_icon svg {
+        width: 30px;
+        transform: translateY(30%);
+    }
+
+    .menu_points {
+        display: none;
+    }
+
+    .wrapper_menu {
+        display: inherit;
+    }
+
+    .flexbox_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper_footer_all {
+        display: block;
+    }
+
+    .wrapper_footer_text {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .wrapper_social_media_icons {
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 2560px) { 
+
+    body {
+        max-width: 1700px;
+        margin: 0 auto;
+        box-shadow: 0 1px 5px 0px rgb(206, 206, 206);
+    }
+
+}
+
